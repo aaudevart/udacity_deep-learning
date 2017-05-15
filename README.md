@@ -41,12 +41,12 @@ Normalize the images : 2 solutions using np.linalg.norm => compute the norm of t
   - Return the output
 
 **My Parameters**
-- Normalize using np.linalg.norm vs 255
-- conv2d_maxpool => weights add stddev ? / bias => init with zeros
-- fully_conn => weights add stddev ? / bias => init with zeros
-- output => weights add stddev ? / bias => init with zeros
+- Normalize using 255 (np.linalg.norm)
+- conv2d_maxpool => weights stddev = 0.1
+- fully_conn => weights stddev = 0.1
+- output => weights stddev = 0.1
 - conv_net => Play around with different number of outputs, kernel size and stride
 - Hyperparameters :
-  - epochs = 10
+  - epochs = 20
   - batch_size = 128
-  - keep_probability = 0.75
+  - keep_probability = 0.85
