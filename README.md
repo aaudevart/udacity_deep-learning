@@ -58,3 +58,17 @@ In this project, the objective is to generate our own Simpsons TV scripts using 
 
 ### Nine different configurations => final is the 7th
 ![Test of project3](assets/project3.png)
+
+
+## Project 4 -- Language Translation
+
+In this project, you’re going to take a peek into the realm of neural network machine translation. You’ll be training a sequence to sequence model on a dataset of English and French sentences that can translate new sentences from English to French.
+
+The NN architecture encode-decode is used.
+
+It consists of two RNNs (Recurrent Neural Network) : An Encoder and a Decoder. 
+- The encoder takes a sequence(sentence) as input and processes one symbol(word) at each timestep. Its objective is to convert a sequence of symbols into a fixed size feature vector that encodes only the important information in the sequence while losing the unnecessary information.
+- Each hidden state influences the next hidden state and the final hidden state can be seen as the summary of the sequence. This state is called the context or thought vector, as it represents the intention of the sequence. 
+- From the context, the decoder generates another sequence, one symbol(word) at a time. Here, at each time step, the decoder is influenced by the context and the previously generated symbols.
+
+[Very good article on Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/)
