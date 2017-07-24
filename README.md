@@ -72,3 +72,8 @@ It consists of two RNNs (Recurrent Neural Network) : An Encoder and a Decoder.
 - From the context, the decoder generates another sequence, one symbol(word) at a time. Here, at each time step, the decoder is influenced by the context and the previously generated symbols.
 
 [Very good article on Seq2Seq](http://suriyadeepan.github.io/2016-06-28-easy-seq2seq/)
+
+
+## Project 5 -- Face Generation
+
+Use a DCGAN on the CelebA dataset to generate images of novel and realistic human faces
