@@ -76,4 +76,24 @@ It consists of two RNNs (Recurrent Neural Network) : An Encoder and a Decoder.
 
 ## Project 5 -- Face Generation
 
-Use a DCGAN on the CelebA dataset to generate images of novel and realistic human faces
+
+Use a DCGAN on the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset contains images of handwritten digits and on the CelebA dataset to generate images of digits and novel and realistic human faces.
+
+The idea behind GANs is that you have two networks, a generator  GG  and a discriminator  DD , competing against each other. The generator makes fake data to pass to the discriminator. The discriminator also sees real data and predicts if the data it's received is real or fake. The generator is trained to fool the discriminator, it wants to output data that looks as close as possible to real data. And the discriminator is trained to figure out which data is real and which is fake. What ends up happening is that the generator learns to make data that is indistiguishable from real data to the discriminator.
+
+![GAN Network](https://github.com/udacity/deep-learning/tree/master/dcgan-svhn/assets/gan_network.png)
+
+A DCGAN is composed of:
+- discriminator: This is basically just a convolutional classifier.
+  - The input to the discriminator are 28x28x3 tensors/images
+  - 3 convolutional layers: use batch normalization with tf.layers.batch_normalization on each layer except the first convolutional and output layers. Again, each layer should look something like convolution > batch norm > leaky ReLU.
+  - then a fully connected layer for the output
+  - to finish a sigmoid output to return the logits as well.
+- generator:
+  - First fully connected layer
+  - Reshape + Batch Normalization + Leaky relu
+  - 2 layers like : conv2d_transpose + Batch Normalization + Leaky relu
+  - conv2d_transpose + tanh
+
+
+
