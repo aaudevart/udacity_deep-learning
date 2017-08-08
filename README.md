@@ -1,5 +1,9 @@
 # Udacity Nanodegree Foundation Program
 
+According to Udacity, a Nanodegree is a project and skills-based educational credential program. You enroll, you learn a suite of skills, you successfully complete a certain amount of projects that demonstrate your mastery of these skills, and you receive a credential affirming your mastery of these skills.
+
+At this repo, I have organized my class materials and my projects in Deep Learning Nanodegree.
+
 This is the repository of all the projects I will carry out during [Udacity Deep Learning Nanodegree Foundation Program]("https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101")
 
 
@@ -101,6 +105,38 @@ A DCGAN is composed of:
   - 3 convolutional layers: use batch normalization with tf.layers.batch_normalization on each layer except the first convolutional and output layers. Again, each layer should look something like convolution > batch norm > leaky ReLU.
   - then a fully connected layer for the output
   - to finish a sigmoid output to return the logits as well.
+
+## Class Materials / Tutorials
+
+- 1. Intro
+  - Sentiment Analysis with Numpy: Andrew Trask leads you through building a sentiment analysis model, predicting if some text is positive or negative.
+
+- 2. CNN
+  - Intro to TFLearn: A couple introductions to a high-level library for building neural networks.
+  - Intro to TensorFlow: Starting building neural networks with Tensorflow.
+  - Weight Intialization: Explore how initializing network weights affects performance.
+  - Transfer Learning (ConvNet). In practice, most people don't train their own large networkd on huge datasets, but use pretrained networks such as VGGnet. Here you'll use VGGnet to classify images of flowers without training a network on the images themselves.
+   
+- 3. RNN
+  - Intro to Recurrent Networks (Character-wise RNN): Recurrent neural networks are able to use information about the sequence of data, such as the sequence of characters in text.
+  - Sentiment Analysis RNN: Implement a recurrent neural network that can predict if a text sample is positive or negative.
+  - Reinforcement Learning (Q-Learning): Implement a deep Q-learning network to play a simple game from OpenAI Gym.
+  - Tensorboard: Use TensorBoard to visualize the network graph, as well as how parameters change through training.
+  - Sequence to sequence: Implement a sequence-to-sequence recurrent network.
+  - Embeddings (Word2Vec): Implement the Word2Vec model to find semantic representations of words for use in natural language processing.
+      
+- 4. GAN
+  - Autoencoders: Build models for image compression and denoising, using feed-forward and convolution networks in TensorFlow.
+  - Batch normalization: Learn how to improve training rates and network stability with batch normalizations.
+  - Generative Adversatial Network on MNIST: Train a simple generative adversarial network on the MNIST dataset.
+  - Deep Convolutional GAN (DCGAN): Implement a DCGAN to generate new images based on the Street View House Numbers (SVHN) dataset.
+
+
+
+
+
+
+
 
 
 
